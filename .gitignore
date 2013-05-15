@@ -7,6 +7,7 @@ laiqh/
 *.py[cod]
 *~
 *weibo_settings.py*
+env_config.py
 
 # C extensions
 *.so

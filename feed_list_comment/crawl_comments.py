@@ -54,7 +54,7 @@ def get_comments(status):
         comments = rec['comments']
         return comments
         # if len(comments)>0:
-        #     process_comments(status = status,comments = comments)
+            process_comments(status = status,comments = comments)
 
 from weibo_settings import DWC
 def DefaultWeiboClient():
@@ -114,7 +114,7 @@ def save_avatar(url,dst_dir):
     File.write(avatar)
     File.close()
 
-def process_comments(status,comments):
+def process_comments(status, comments):
     post_id=status['post_id']
     to_comment_id=0
     to_user_id=status['user_weibo_id']
@@ -163,7 +163,7 @@ if __name__ == '__main__':
     flag = True
     while 1:
         status = {}
-        status = {'status_id': 3577452087325613, 'count': 10}
+        status = {'status_id': 3578247806047313, 'count': 10}
         comments = get_comments(status=status)
         print "comments===", comments
         # time.sleep(1)
