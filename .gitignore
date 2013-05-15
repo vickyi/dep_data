@@ -1,4 +1,12 @@
+*.pyc
+*.db
+*.log
+*.txt
+.idea
+laiqh/
 *.py[cod]
+*~
+*weibo_settings.py*
 
 # C extensions
 *.so
