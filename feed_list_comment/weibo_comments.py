@@ -121,8 +121,12 @@ class weibo_comment:
     def get_comments(self):
          #comment list
          comments =  crawl_comments.get_comments()
-         # user
          comment_user = comments[0]['user']
+         user_id = comment_user['id']
+
+         for cmt in comments:
+             # user
+             id, idstr, mid,  text, created_at, source = cmt['id'],  cmt['idstr'],  cmt['mid'],  cmt['text'],  cmt['created_at'],  cmt['source']
 
          # weibo user
          status = comments[0]['status']
